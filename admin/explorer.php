@@ -10,9 +10,8 @@ $path = getcwd();
 echo $path;
 
 //загрузка файлов на сервер
-$destPath = './uploads';
+$destPath = '../uploads';
 if (!(file_exists($destPath))) {
     mkdir('../uploads');
 }
-
-
+$allFiles = scandir($destPath);
