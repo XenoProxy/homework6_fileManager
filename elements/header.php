@@ -9,13 +9,10 @@
 <body>
     <h1>Explorer</h1>
     <?php
-        $home = __DIR__;
-        echo "<a href='/admin/..'>Домой</a><br>";
-        
-        $folder = './' . $_GET['folder'];
-        if ($_GET['folder'] == 'admin') {
-            $folder = __DIR__;
-        }
+        $folder = $_GET['folder'];
+        if ($folder == 'admin'):?>
+            <h1>Admin directory</h1>
+        <?php endif;
     ?>
 </body>
 </html>
